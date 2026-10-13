@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="card page-header">
+        <div class="header-copy">
+          <p class="eyebrow">Personal Finance</p>
+          <h1>Budget Tracker</h1>
+        </div>
+        <div class="summary-pill">
+          <span>Total Spent</span>
+          <strong>$1,248.60</strong>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="card form-card">
+          <h2>Add Expense</h2>
+
+          <form class="expense-form">
+            <div class="form-group">
+              <label for="expense-name">Expense Name</label>
+              <input id="expense-name" type="text" placeholder="Groceries" />
+            </div>
+
+            <div class="form-group">
+              <label for="expense-amount">Amount</label>
+              <input id="expense-amount" type="number" placeholder="125.00" />
+            </div>
+
+            <div class="form-group">
+              <label for="expense-category">Category</label>
+              <select id="expense-category">
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Housing</option>
+                <option>Utilities</option>
+                <option>Leisure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="expense-date">Date</label>
+              <input id="expense-date" type="date" />
+            </div>
+
+            <button type="submit">Add Expense</button>
+          </form>
+        </section>
+
+        <section class="card table-card">
+          <div class="section-heading">
+            <h2>Expense Overview</h2>
+          </div>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Category</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Groceries</td>
+                  <td>Food</td>
+                  <td>12 Apr</td>
+                  <td>$84.25</td>
+                </tr>
+                <tr>
+                  <td>Metro Pass</td>
+                  <td>Transport</td>
+                  <td>14 Apr</td>
+                  <td>$32.00</td>
+                </tr>
+                <tr>
+                  <td>Internet Bill</td>
+                  <td>Utilities</td>
+                  <td>16 Apr</td>
+                  <td>$58.90</td>
+                </tr>
+                <tr>
+                  <td>Cinema</td>
+                  <td>Leisure</td>
+                  <td>18 Apr</td>
+                  <td>$24.50</td>
+                </tr>
+                <tr>
+                  <td>Rent</td>
+                  <td>Housing</td>
+                  <td>20 Apr</td>
+                  <td>$1,048.95</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
